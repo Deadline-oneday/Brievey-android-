@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-        mWebView.loadUrl("http://d41jungod.dothome.co.kr");
+        mWebView.loadUrl("http://daljun.pythonanywhere.com/poem");
 
     }
     @Override
