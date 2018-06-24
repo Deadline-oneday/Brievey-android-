@@ -24,12 +24,15 @@ public class MainActivity extends AppCompatActivity {
         mWebView.getSettings().setSupportZoom(true);
         mWebView.getSettings().setUseWideViewPort(true);
         mWebView.setLayerType(View.LAYER_TYPE_HARDWARE,null);
-        mWebView.setInitialScale(80);
+        mWebView.setInitialScale(50);
         mWebView.setVerticalScrollBarEnabled(false);
         mWebView.setHorizontalScrollBarEnabled(false);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+
         webSettings.setMediaPlaybackRequiresUserGesture(false);
+        webSettings.setRenderPriority(WebSettings.RenderPriority.HIGH);
+        webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
 
         mWebView.setWebViewClient(new WebViewClient(){
             @Override
