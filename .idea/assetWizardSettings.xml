@@ -18,7 +18,8 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="C:\Users\oonja\Downloads\sunrise.png" />
+                                      <entry key="backgroundColor" value="fffaff" />
+                                      <entry key="foregroundImage" value="C:\Users\oonja\Downloads\half-moon.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

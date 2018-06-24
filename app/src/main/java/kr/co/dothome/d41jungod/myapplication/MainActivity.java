@@ -3,6 +3,8 @@ package kr.co.dothome.d41jungod.myapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.view.View;
+import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -12,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
         mWebView = (WebView)findViewById(R.id.activity_main_webview);
@@ -19,8 +23,13 @@ public class MainActivity extends AppCompatActivity {
         mWebView.getSettings().setDisplayZoomControls(false);
         mWebView.getSettings().setSupportZoom(true);
         mWebView.getSettings().setUseWideViewPort(true);
+        mWebView.setLayerType(View.LAYER_TYPE_HARDWARE,null);
+        mWebView.setInitialScale(80);
+        mWebView.setVerticalScrollBarEnabled(false);
+        mWebView.setHorizontalScrollBarEnabled(false);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setMediaPlaybackRequiresUserGesture(false);
 
         mWebView.setWebViewClient(new WebViewClient(){
             @Override
