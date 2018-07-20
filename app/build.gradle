@@ -14,7 +14,7 @@ android {
         release {
             applicationVariants.all { variant ->
                 variant.outputs.all {
-                    outputFileName = "새벽갬성_${new Date().format('yyyyMMdd_HHmm')}.apk"
+                    outputFileName = "Brievey_${new Date().format('yyyyMMdd_HHmm')}.apk"
                 }
             }
         }

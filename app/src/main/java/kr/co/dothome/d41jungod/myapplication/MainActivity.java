@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         mWebView.getSettings().setSupportZoom(true);
         mWebView.getSettings().setUseWideViewPort(true);
         mWebView.setLayerType(View.LAYER_TYPE_HARDWARE,null);
-        mWebView.setInitialScale(50);
         mWebView.setVerticalScrollBarEnabled(false);
         mWebView.setHorizontalScrollBarEnabled(false);
         WebSettings webSettings = mWebView.getSettings();
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-        mWebView.loadUrl("http://daljun.pythonanywhere.com/poem");
+        mWebView.loadUrl("http://brievey.gungail.online");
 
     }
     @Override

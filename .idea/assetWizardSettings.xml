@@ -16,10 +16,25 @@
                             <entry key="launcher">
                               <value>
                                 <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="foregroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="64" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundColor" value="fffaff" />
-                                      <entry key="foregroundImage" value="C:\Users\oonja\Downloads\half-moon.png" />
+                                      <entry key="foregroundImage" value="C:\Users\oonja\Documents\카카오톡 받은 파일\logopack\lgosticker.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
